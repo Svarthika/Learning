@@ -7,18 +7,14 @@ public class TriangleClassify {
         System.out.println("a:");
         int a = sc.nextInt();
         System.out.println("b:");
-        int b= sc.nextInt();
+        int b = sc.nextInt();
         System.out.println("c:");
-        int c=sc.nextInt();
-
-        if(a==b&&b==c) {
+        int c = sc.nextInt();
+        if (a == b && b == c) {
             System.out.println("Equilateral Triangle");
-        }
-            else if(a==b || a==c || b==c){
+        } else if (a == b || a == c || b == c) {
             System.out.println("isosceles  Triangle");
-            }
-
-            else{
+        } else {
             System.out.println("scalene Triangle - No sides equal");
         }
 
