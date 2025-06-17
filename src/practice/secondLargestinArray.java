@@ -39,6 +39,7 @@ public class secondLargestinArray {
            for(int i= arr.length-2; i>=0;i--){
                if(arr[i]!=largest) {
                    seclargest = arr[i];
+
                    break;
                }
            }
