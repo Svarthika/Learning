@@ -1,4 +1,4 @@
-package practice;
+package practice.Jun18;
 
 import java.util.Scanner;
 
@@ -6,7 +6,18 @@ public class Gradecalculater {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the score");
-       int score = sc.nextInt();
+        int score;
+        while(true){
+            if(sc.hasNextInt()){
+                 score = sc.nextInt();
+                 break;
+            }
+            else{
+                System.out.println("Enter valid score");
+                sc.next();
+            }
+        }
+
 
        if(score>=90 && score<=100){
            System.out.println("Grade A");
