@@ -1,4 +1,4 @@
-package practice.June27th.set2;
+package practice.June27th_Set2;
 
 import java.util.Scanner;
 
