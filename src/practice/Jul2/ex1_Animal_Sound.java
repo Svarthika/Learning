@@ -1,4 +1,4 @@
-package practice.Jul2;
+package practice.Jul2nd;
 
 public class ex1_Animal_Sound {
     public static void main(String[] args) {
