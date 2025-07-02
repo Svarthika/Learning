@@ -10,6 +10,22 @@ public class ex1_Animal_Sound {
         c2.makeSound();
 
     }
+}
 
+class Animal_Sound_simulator {
+    void makeSound(){
+        System.out.println("animal sound parent");
+    }
+}
 
+class cat extends Animal_Sound_simulator {
+
+    void meow(){
+        System.out.println("Meow Meow");
+
+    }
+    void makesound(){
+        System.out.println("animal sound child");
+
+    }
 }

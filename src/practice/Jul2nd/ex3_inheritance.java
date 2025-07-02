@@ -9,3 +9,21 @@ public class ex3_inheritance {
 
     }
 }
+
+class SuperAdmin extends AdminUser {
+    void shutdownSystem()
+    {
+        System.out.println("shut down system");
+    }
+}
+class User {
+    void login(){
+        System.out.println("user logged in");
+    }
+}
+class AdminUser extends User{
+    void accessAdminPanel()
+    {
+        System.out.println("admin panel");
+    }
+}

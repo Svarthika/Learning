@@ -6,3 +6,14 @@ public class ex2_Bike {
         Vehicle b2 = new Bike();
     }
 }
+class Bike extends Vehicle{
+    Bike(){
+        System.out.println("Bike is ready");
+    }
+}
+class Vehicle {
+    Vehicle(){
+        System.out.println("Vehicle is ready");
+
+    }
+}
