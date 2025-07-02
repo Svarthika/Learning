@@ -1,4 +1,4 @@
-package practice.Jul2nd;
+package practice.Jul2;
 
 public class ex2_Bike {
     public static void main(String[] args) {
