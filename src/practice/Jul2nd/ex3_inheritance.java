@@ -1,4 +1,4 @@
-package practice.Jul2;
+package practice.Jul2nd;
 
 public class ex3_inheritance {
     public static void main(String[] args) {
