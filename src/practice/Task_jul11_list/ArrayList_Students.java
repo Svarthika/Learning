@@ -1,4 +1,4 @@
-package practice.Task_jul11;
+package practice.Task_jul11_list;
 
 import java.util.ArrayList;
 

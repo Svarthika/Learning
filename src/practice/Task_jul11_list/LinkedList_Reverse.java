@@ -1,8 +1,7 @@
-package practice.Task_jul11;
+package practice.Task_jul11_list;
 
 import java.util.Collections;
 import java.util.LinkedList;
-import java.util.List;
 
 public class LinkedList_Reverse {
     public static void main(String[] args) {
