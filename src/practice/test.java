@@ -1,40 +1,38 @@
 package practice;
 
-public class test {
-    public static void main(String[] args) {
-        int a = 110;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-        int b = a--;
+public class test
+{
+    public static void main(String[] args)
+    {
+        // Input list of words
+        String[] words = {"Java", "is", "fun", "cool", "Hi"};
 
-        System.out.println("the value of b is " +b);
+        // Map to store length as key and list of words as value
+        Map<Integer, List<String>> lengthMap = new HashMap<>();
 
-        int d = --a;
+        // Loop through each word
+        for (String word : words)
+        {
+            int length = word.length();
 
-        System.out.println("the value of D is " + d);
+            // If the length already exists, add the word to the list
+            if (!lengthMap.containsKey(length))
+            {
+                lengthMap.put(length, new ArrayList<>());
+            }
 
-        System.out.println("the value of A is " +a);
+            lengthMap.get(length).add(word);
+        }
 
-        int l= b--;
-
-        System.out.println("the value of l is " +l);
-
-        System.out.println("the value of b is " +b);
-
-        int s = d-- + --b;
-
-        System.out.println("the value of S is " +s);
-
-        s = --d + --b;
-
-        System.out.println("the value of S is " +s);
-
-        System.out.println("the value of b is " +b);
-
-        System.out.println("what will be the value of "+ b++);
-
-        System.out.println("what will be the value of "+ ++b);
-
-        System.out.println("what will be the value of "+ b--);
-
-        System.out.println("what will be the value of "+ --b);
-    }}
+        // Print the grouped words
+        for (Map.Entry<Integer, List<String>> entry : lengthMap.entrySet())
+        {
+            System.out.println(entry.getKey() + " -> " + entry.getValue());
+        }
+    }
+}
